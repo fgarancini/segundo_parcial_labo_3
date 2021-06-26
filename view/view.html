@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/manejadora.js"></script>
+    <script src="../js/vehiculo.js"></script>
+    <script src="../js/auto.js"></script>
+    <script src="../js/camioneta.js"></script>
+    <script src="../js/DOMtools.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="formContainer">
+        <form action="" class="container"id="container">
+            <label for="">ID:</label>
+            <input type="text" id="id" disabled>
+            <label for="">Marca:</label>
+            <input type="text" name="marca" id="marca">
+            <label for="">Modelo:</label>
+            <input type="text" name="modelo" id="modelo">
+            <label for="">Precio:</label>
+            <input type="text" name="precio" id="precio">
+            <select name="tipoVehiculo" id="tipoVehiculo">
+                <option value="auto">Auto</option>
+                <option value="camioneta">Camioneta</option>
+            </select> <input type="checkbox" name="camioneta" id="4X4"><label for="">4X4</label>
+            <input type="button" value="Dar Alta" id="btnAltaNueva">
+        </form>
+    </div>
+    <div id="nav">
+        <input type="button" value="alta" id="btnAlta">
+    </div>
+
+    <header><h1>Filtros</h1></header>
+
+    <div id="filtros">
+        <h3>Filtrar por:</h3>
+        <select name="FiltroAutos" id="filtroXtipo">
+            <option value="auto">Auto</option>
+            <option value="camioneta">Camioneta</option>
+        </select>
+        <h3>Promedio de precio</h3>
+        <input type="text" name="precioPromedio" id="precioPromedio" disabled>
+    </div>
+
+    <h1>Campos Mostrados</h1>
+    <div id="opciones">
+        <input type="checkbox" name="filtros" id="id" > <label for="">ID</label>
+        <input type="checkbox" name="filtros" id="marca"> <label for="">Marca</label>
+        <input type="checkbox" name="filtros" id="modelo"><label for="">Modelo</label>
+        <input type="checkbox" name="filtros" id="precio"><label for="">Precio</label>
+    </div>
+    <h1>Lista de vehiculos</h1>
+    <div id="tabla">
+
+    </div>
+</body>
+</html>
